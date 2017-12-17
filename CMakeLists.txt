@@ -15,7 +15,7 @@ include_directories(include)
 file(GLOB_RECURSE ALL_STRINGS_CPP src/*_strings.cpp)
 
 # create benchmarks
-set(BENCHMARK_CPP src/benchmark.cpp)
+set(BENCHMARK_CPP test/benchmark.cpp)
 set(UNITTEST_CPP test/unittest.cpp)
 foreach(ONE_STRINGS_CPP ${ALL_STRINGS_CPP})
     get_filename_component(ONE_BENCH_EXEC ${ONE_STRINGS_CPP} NAME_WE)
