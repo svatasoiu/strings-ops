@@ -40,11 +40,11 @@ TEST(StrcpyTest, Correctness) {
     test_strcpy("abcd");
     test_strcpy("123456789");
 
-    // const size_t big_size = 1 << 20;
-    // auto str = new char[big_size + 1];
-    // std::memset(str, 'a', big_size);
-    // str[big_size] = 0;
-    // test_strcpy(str);
+    const size_t big_size = 1 << 20;
+    auto str = new char[big_size + 1];
+    std::memset(str, 'a', big_size);
+    str[big_size] = 0;
+    test_strcpy(str);
 }
 
 }
